@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Attendance_Project</string>
+    <string-array name="spin">
+        <item>admin</item>
+        <item>faculty</item>
+    </string-array>
+
+    <string-array name="spin1">
+        <item>EC</item>
+        <item>CS</item>
+        <item>IT</item>
+        <item>MCA</item>
+    </string-array>
+
+    <string-array name="spin2">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+    </string-array>
+
+    <string-array name="spin3">
+        <item>C</item>
+        <item>C++</item>
+        <item>JAVA</item>
+        <item>HTML</item>
+        <item>Python</item>
+        <item>CSS</item>
+    </string-array>
+
+</resources>

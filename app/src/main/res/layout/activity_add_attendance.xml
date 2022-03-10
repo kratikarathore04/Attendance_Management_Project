@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Add_Attendance">
+
+    <TextView
+        android:id="@+id/textAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Attendance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginTop="30dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/textAttendance"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text1"
+        android:textSize="17sp"
+        android:textColor="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/text2"
+        android:textColor="@android:color/holo_red_dark"/>
+
+
+    <ImageButton
+        android:id="@+id/DateImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:onClick="go"
+        android:src="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/buttonsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:onClick="add"
+        android:text="Add Attendance" />
+
+    <Button
+        android:id="@+id/viewTotalAttendanceButton"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsubmit"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:onClick="view"
+        android:text="View Total Attendance" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/spin2"
+        android:layout_below="@+id/spinner1"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/spin3"
+        android:layout_below="@+id/spinner2"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="60dp"
+        android:entries="@array/spin1"
+        android:layout_below="@+id/textAttendance"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewTotalAttendanceButton"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:onClick="logout"
+        android:text="Logout" />
+
+</RelativeLayout>

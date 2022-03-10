@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.attendance_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Attendance_Project">
+        <activity android:name=".add_view_student_by_branch_year"></activity>
+        <activity android:name=".view" />
+        <activity android:name=".Faculty" />
+        <activity android:name=".View_attendance" />
+        <activity android:name=".Add_Attendance" />
+        <activity android:name=".ViewFaculty" />
+        <activity android:name=".Add_Faculty" />
+        <activity android:name=".ViewStudent" />
+        <activity android:name=".Add_Student" />
+        <activity android:name=".Admin" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

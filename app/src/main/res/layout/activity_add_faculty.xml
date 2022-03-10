@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Add_Faculty">
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:text="Cancel" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/editText5"
+        android:inputType="textPersonName"
+        android:hint="UserName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="230dp"
+        android:layout_below="@+id/textViewUsername"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="410dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textViewPassword"
+        android:hint="Password"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/editText4"
+        android:inputType="textPersonName"
+        android:hint="Address"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textViewAddress"/>
+
+    <TextView
+        android:id="@+id/textViewMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="220dp"
+        android:text="Mobile Number"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_height="44dp"
+        android:layout_width="410dp"
+        android:id="@+id/editText2"
+        android:inputType="textPersonName"
+        android:hint="lastname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textViewLastName"/>
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:text="Address"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="250dp"
+        android:text="UserName"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:text="Password"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFormName"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:text="Lastname"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewFormName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Add Faculty"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFormName"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="230dp"
+        android:text="Firstname"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/editText"
+        android:inputType="textPersonName"
+        android:hint="firstname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="230dp"
+        android:layout_below="@+id/textViewFirstName"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewMobile"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="220dp"
+        android:hint="Mobile Number"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText6"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="35dp"
+        android:onClick="submit"
+        android:text="Submit" />
+
+</RelativeLayout>

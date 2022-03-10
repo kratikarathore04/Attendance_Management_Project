@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="100dp"
+        android:text="Login Here"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_below="@+id/textVie"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="120dp"
+        android:entries="@array/spin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="110dp"
+        android:textSize="30sp"
+        android:text="UserName"
+        android:textColor="#F81100"
+        android:layout_marginLeft="120dp"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="90dp"
+        android:hint="User name"
+        android:inputType="textPersonName"
+        android:textColorHint="#191616" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="90dp"
+        android:text="Password"
+        android:textColor="#F81100"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/editText3"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#191616"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/button2"
+        android:text="Login"
+        android:onClick="login"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"/>
+
+</RelativeLayout>

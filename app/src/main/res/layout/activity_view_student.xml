@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".ViewStudent">
+
+    <TextView
+        android:id="@+id/Student_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Student"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Student_page"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="180dp"
+        android:text="Select Department"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <Spinner android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/department"
+        android:entries="@array/spin1"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Select year"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_below="@+id/department"
+        android:layout_marginRight="200dp"/>
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/year"
+        android:entries="@array/spin2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="90dp"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Show"
+        android:layout_marginTop="60dp"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/year"
+        android:onClick="Next"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"/>
+
+</RelativeLayout>
